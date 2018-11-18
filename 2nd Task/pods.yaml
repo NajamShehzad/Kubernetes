@@ -1,0 +1,17 @@
+#First using label set a label in your node using following command
+# kubectl label node " Your Node Name "  " Key  =  Value" 
+# ie kubectl label node minikube nodename=myfirstnode
+#now specify the pod to run in this node
+apiVersion : v1
+kind : Pod
+metadata : 
+  name : clientapp-node
+  lebels : 
+    app : nodeapp
+spec : 
+  nodeselector:
+    nodename : firstnode
+  containers : 
+    - image : najamshehzad/todoclient:v2
+      name : containernmae
+      port : 80

@@ -7,6 +7,6 @@ metadata:
 spec:
   containers:
     - image: najamshehzad/todoclient:v2
-      name: clientapp
+      name: clientapp #container name
       ports:
         - containerPort: 80
