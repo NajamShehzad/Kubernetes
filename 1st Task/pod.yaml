@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: clientapp
+  labels:
+    app : client12
+spec:
+  containers:
+    - image: najamshehzad/todoclient:v2
+      name: clientapp
+      ports:
+        - containerPort: 80
