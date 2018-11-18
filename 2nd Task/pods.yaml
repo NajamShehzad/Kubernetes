@@ -5,11 +5,14 @@
 apiVersion : v1
 kind : Pod
 metadata : 
+  annotations :
+    kubernetes.io/created-by : |
+      {"kind" : "any information about pod"}
   name : clientapp-node
   lebels : 
     app : nodeapp
 spec : 
-  nodeselector:
+  nodeSelector: #fixed use nodeSelector case sensitive
     nodename : firstnode
   containers : 
     - image : najamshehzad/todoclient:v2
