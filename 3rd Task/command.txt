@@ -1,0 +1,2 @@
+kubectl edit po "pod name" 
+kubectl applay -f "yamal fiel name";

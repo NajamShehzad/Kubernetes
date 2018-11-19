@@ -1,12 +1,16 @@
-apiVersion: v1
+apiVersion : v1
 kind : Pod
 metadata:
-  name : no-sqlserver
-  labels:
-    server : node
-spec:
+  name : no-sql12
+  labels : 
+    server : server12
+spec : 
   containers : 
-    - image: najamshehzad/nosqlapi:latest
-      name: no-sql-container
+    - image : najamshehzad/nosqlapi:latest
+      name : nosql-container
       ports:
         - containerPort : 8000
+    - image : najamshehzad/todoclient:v2
+      name: ngnix
+      ports :
+        - containerPort : 80 
