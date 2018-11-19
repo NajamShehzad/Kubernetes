@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: osama-pod
+  labels:
+    new : files
+spec: 
+  containers:
+    - image: najamshehzad/todoclient:v2
+      name: osama-container
+      ports:
+        - containerPort: 80
+    # - image: najamshehzad/nosqlapi:latest
+    #   name: osama-container1
+    #   ports:
+    #     - containerPort: 8000      
