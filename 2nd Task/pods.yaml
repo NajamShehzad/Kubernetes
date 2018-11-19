@@ -4,7 +4,7 @@
 #now specify the pod to run in this node
 apiVersion : v1
 kind : Pod
-metadata : 
+metadata : # To add this pod to a specfic name space use namespace:'namespace name' inside metadata OR use ubectl create -f pods.yaml -n custom-namespace
   annotations :
     kubernetes.io/created-by : |
       {"kind" : "any information about pod"}

@@ -1,0 +1,5 @@
+#It Can Also created with kubectl command "Kubectl create namespace 'its name' ie 'custom namespace'"
+apiVersion : v1
+kind : Namespace
+metadata:
+  name : custom-namespace #Your Custom Namespace name
