@@ -1,0 +1,12 @@
+apiVersion: v1
+kind : Pod
+metadata:
+  name : no-sqlserver
+  labels:
+    server : node
+spec:
+  containers : 
+    - image: najamshehzad/nosqlapi:latest
+      name: no-sql-container
+      ports:
+        - containerPort : 8000

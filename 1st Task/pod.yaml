@@ -10,3 +10,5 @@ spec:
       name: clientapp #container name
       ports:
         - containerPort: 80
+    # - image: todoclient:v2
+    #   name : container2client
