@@ -10,7 +10,7 @@ spec:
       name: osama-container
       ports:
         - containerPort: 80
-    # - image: najamshehzad/nosqlapi:latest
-    #   name: osama-container1
-    #   ports:
-    #     - containerPort: 8000      
+    - image: najamshehzad/nosqlapi:latest
+      name: osama-container1
+      ports:
+        - containerPort: 8000      
