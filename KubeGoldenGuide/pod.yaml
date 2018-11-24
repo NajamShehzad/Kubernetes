@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: osama-pod
+  labels:
+    new : files
+spec: 
+  containers:
+    - image: kubegoldenguide/simple-http-server
+      name: osama-container    
