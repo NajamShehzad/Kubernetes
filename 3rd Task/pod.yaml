@@ -13,4 +13,4 @@ spec :
     - image : najamshehzad/todoclient:v2
       name: ngnix
       ports :
-        - containerPort : 80 
+        - containerPort : 80

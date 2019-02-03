@@ -1,0 +1,7 @@
+apiVersion : v1
+data:
+  sleep-interval: "30"
+  work : "don't know what to do"
+kind: ConfigMap
+metadata :
+  name : my-config122
