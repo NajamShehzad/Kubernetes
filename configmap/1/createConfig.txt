@@ -1,0 +1,1 @@
+sudo kubectl create configmap "ConfigMap Name"  --from-literal="key"="value"
