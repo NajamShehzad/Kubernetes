@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+        name: newng
+spec:
+        containers:
+        - name: container1
+          image: nginx
+          ports:
+          - name: ngport
+            containerPort: 80
