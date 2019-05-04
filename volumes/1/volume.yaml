@@ -6,7 +6,7 @@ metadata:
     app: myapp
 spec:
   volumes:
-  - name: share-dir
+  - name: share-dir1
     emptyDir: {}
   containers:
   - name: container-one
@@ -25,6 +25,6 @@ spec:
     - containerPort: 80
     imagePullPolicy: IfNotPresent
     volumeMounts:
-    - name: share-dir
+    - name: share-dir1
       mountPath: /var/cont-wsds
   restartPolicy: Never
